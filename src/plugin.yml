@@ -1,5 +1,5 @@
-name: OpenInv
-main: com.lithium3141.OpenInv.OpenInv
+name: OpenItem
+main: com.lithium3141.OpenItem.OpenItem
 author: lithium3141
 version: 1.0-alpha (rev @BUILD@)
 database: false
