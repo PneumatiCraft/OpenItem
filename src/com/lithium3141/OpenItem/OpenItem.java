@@ -8,6 +8,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import com.lithium3141.OpenItem.commands.*;
 import com.pneumaticraft.commandhandler.CommandHandler;
 
 public class OpenItem extends JavaPlugin {
@@ -42,6 +43,8 @@ public class OpenItem extends JavaPlugin {
     
     private void loadCommands() {
         this.commandHandler = new CommandHandler(this, new OIPermissionsHandler(this));
+        
+        this.commandHandler.registerCommand(new OIGiveCommand(this));
     }
 
 }
