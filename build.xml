@@ -83,9 +83,9 @@
     </target>
 
     <target name="jar" depends="compile,retag">
-        <jar jarfile="${dist}/OpenInv.jar" basedir="${build}" includes="**/*.class plugin.yml">
+        <jar jarfile="${dist}/OpenItem.jar" basedir="${build}" includes="**/*.class plugin.yml">
             <manifest>
-                <attribute name="Main-Class" value="OpenInv" />
+                <attribute name="Main-Class" value="OpenItem" />
             </manifest>
         </jar>
     </target>
@@ -95,6 +95,6 @@
         <delete>
             <fileset dir="${lib}" includes="*.jar" />
         </delete>
-        <delete file="${dist}/OpenInv.jar" />
+        <delete file="${dist}/OpenItem.jar" />
     </target>
 </project>
