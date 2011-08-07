@@ -1,0 +1,9 @@
+name: OpenInv
+main: com.lithium3141.OpenInv.OpenInv
+author: lithium3141
+version: 1.0-alpha (rev @BUILD@)
+database: false
+commands:
+    give:
+        description: Give a player items
+        usage: /<command>
