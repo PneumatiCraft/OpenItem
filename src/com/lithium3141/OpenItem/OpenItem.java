@@ -41,7 +41,7 @@ public class OpenItem extends JavaPlugin {
     }
     
     private void loadCommands() {
-        this.commandHandler = new CommandHandler(this, new OIPermissionsHandler());
+        this.commandHandler = new CommandHandler(this, new OIPermissionsHandler(this));
     }
 
 }
